@@ -1000,4 +1000,30 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 <!-- 为代码块加上双击复制功能 -->
 </body>
+</html>a.value = codeContent;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    
+                    try {
+                        document.execCommand('copy');
+                        layer.msg('代码已复制成功！', {icon: 1});  // 设置成功提示图标
+                        console.log('尝试复制代码...');
+                    } catch (err) {
+                        layer.msg('复制代码失败，请手动复制。', {icon: 2});  // 设置失败提示图标
+                        console.log('复制代码结果:', err);  // 在catch块中   
+                    } finally {
+                        // 确保无论是否成功，都移除textarea元素
+                        document.body.removeChild(textarea);
+                    }
+                });
+
+                // 为每个pre标签添加title属性
+                preTags[i].setAttribute('title', '双击复制代码');
+            }
+        }
+    });
+});
+</script>
+<!-- 为代码块加上双击复制功能 -->
+</body>
 </html>
