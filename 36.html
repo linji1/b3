@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=问题交叉公路。问题交叉公路nbspnbsp 有两条公路成十字交叉，甲从十字路口南1350米处往北直行乙从十字路口处向东直行。二人同时出发，10分钟后，二人离十字路口的距离相等二人仍保持原速继续直行，又过了80分钟，这时二人离十字路口的距离又相等。求甲，乙二人的速度。答案交叉公路 分析与解 甲从十字路口南1350米处往北直行，乙从十字路口处向东直行，同时出发，10分钟后二人离十字路口距离相等，说明甲，乙二人10分钟共行了1350米，于是可以求出二人每分钟的速度和。又知道，二人继续行走80分钟，即从出发各行90分钟，二人离十字路口距离又相等，说明甲，乙二人90分钟行走的路程之差是1350米。于是又">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=问题交叉公路。问题交叉公路nbspnbsp 有两条公路成十字交叉，甲从十字路口南1350米处往北直行乙从十字路口处向东直行。二人同时出发，10分钟后，二人离十字路口的距离相等二人仍保持原速继续直行，又过了80分钟，这时二人离十字路口的距离又相等。求甲，乙二人的速度。答案交叉公路 分析与解 甲从十字路口南1350米处往北直行，乙从十字路口处向东直行，同时出发，10分钟后二人离十字路口距离相等，说明甲，乙二人10分钟共行了1350米，于是可以求出二人每分钟的速度和。又知道，二人继续行走80分钟，即从出发各行90分钟，二人离十字路口距离又相等，说明甲，乙二人90分钟行走的路程之差是1350米。于是又','https://dict.youdao.com/dictvoice?le=zh&audio=可以求出二人每分钟的速度差，进而求出甲，乙各自的速度。135010135米1350108015米甲的速度是13515275米乙的速度是13515260米即甲的速度是每分钟75米，乙的速度是每分钟60米。例 两条公路成十字交叉，甲从十字路口南1200米处向北直行，乙从十字路口处向东直行甲，乙同时出发10分钟，两人与十字路口的距离相等出发后100分钟，两人与十字路口的距离再次相等，此时他们距离十字路口多少米二16解由甲，乙同时出发10分钟，两人与十字路口的距离OB  OC可以想象为甲从A乙从O同时相向而行，10分钟相遇于B，共行1200米，所以甲，乙速度和为nbspnbspnbspnbspnbsp','https://dict.youdao.com/dictvoice?le=zh&audio=nbspnbspnbspnbspnbsp 1200  10120米由出发后100分钟，两人与与十字路口的距离再次相等，OD  OE，可以想象为甲从A乙从O同时同向而行，100分钟甲追及乙于D，甲比乙100分钟多行1200米 因此甲，乙速度差为nbspnbsp 1200  10012米因此，甲速为120  12 2  66米分乙速为120 12 2  54米分第二次两人与十字路口等距时，他们距离十字路口O为54100  5400米另解设甲的速度为 米分，乙的速度为 米分，则答第二次两人与十字路口等距时，他们距离十字路口为5400米 下载文件 希望杯小学试题分类解析  在线打开',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -635,11 +603,7 @@ document.body.addEventListener('input', POWERMODE);
 <h1>问题：交叉公路</h1><div class="text">
 <b>问题：交叉公路</b><br><br>&nbsp;&nbsp; 有两条公路成十字交叉，甲从十字路口南1350米处往北直行；乙从十字路口处向东直行。二人同时出发，10分钟后，二人离十字路口的距离相等；二人仍保持原速继续直行，又过了80分钟，这时二人离十字路口的距离又相等。求甲、乙二人的速度。<br><br><b>答案：交叉公路</b><br><br> 　　分析与解 甲从十字路口南1350米处往北直行，乙从十字路口处向东直行，同时出发，10分钟后二人离十字路口距离相等，说明甲、乙二人10分钟共行了1350米，于是可以求出二人每分钟的速度和。又知道，二人继续行走80分钟，即从出发各行90分钟，二人离十字路口距离又相等，说明甲、乙二人90分钟行走的路程之差是1350米。于是又可以求出二人每分钟的速度差，进而求出甲、乙各自的速度。<br><br>　　1350÷10=135（米）<br><br>　　1350÷（10+80）=15（米）<br><br>　　甲的速度是：（135+15）÷2=75（米）<br><br>　　乙的速度是：（135-15）÷2=60（米）<br><br>　　即甲的速度是每分钟75米，乙的速度是每分钟60米。<!--more--><br><br><p align="center">*********************************************************************************</p>例. 两条公路成十字交叉，甲从十字路口南1200米处向北直行，乙从十字路口处向东直行.甲、乙同时出发10分钟，两人与十字路口的距离相等；出发后100分钟，两人与十字路口的距离再次相等，此时他们距离十字路口多少米？（二.16）<br>解：由甲、乙同时出发10分钟，两人与十字路口的距离OB = OC；可以想象为甲从A乙从O同时相向而行，10分钟相遇于B，共行1200米，所以甲、乙速度和为<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1200 ÷ 10=120（米）<br>由出发后100分钟，两人与与十字路口的距离再次相等，OD = OE，可以想象<br><br><a href="/assets3/file/2020/03/1214831771_7642f3cc.jpg" target="_blank" rel="noopener noreferrer" data-fancybox="gallery"><img src="/assets3/file/2020/03/1214831771_7642f3cc.jpg" class="insertimage" border="0" align="left" width="320"></a><br><br>为甲从A乙从O同时同向而行，100分钟甲追及乙于D，甲比乙100分钟多行1200米. 因此甲、乙速度差为&nbsp;&nbsp; 1200 ÷ 100=12（米）<br>因此，甲速为（120 + 12）÷ 2 = 66（米/分）<br>乙速为（120 -12）÷ 2 = 54（米/分）<br>第二次两人与十字路口等距时，他们距离十字路口O为54×100 = 5400（米）.<br>另解：设甲的速度为 米/分，乙的速度为 米/分，则<br><a href="/assets3/file/2020/03/1214831910_40251560.jpg" target="_blank" rel="noopener noreferrer" data-fancybox="gallery"><img src="/assets3/file/2020/03/1214831910_40251560.jpg" class="insertimage" border="0" align="left" width="400"></a><br>答：第二次两人与十字路口等距时，他们距离十字路口为5400（米）.<br><br>
 <div style="clear: both; border-left: 0pt solid rgb(214, 192, 148); width: 100%;"><div style="background-color: rgb(230, 238, 247); border-bottom: 1px dashed rgb(64, 138, 183) ! important; color: rgb(63, 103, 165); font-weight: bold; padding: 5px;"><i class="fas fa-download"></i> 下载文件 </div><div style="border-color: -moz-use-text-color rgb(230, 238, 247) rgb(230, 238, 247); border-style: none solid solid; border-width: 0pt 1px 1px; color: #E6EEF7; padding: 10px;"><a target="_blank" href="/assets3/file/2020/03/1214832629_4765d719.doc" style="">希望杯小学试题分类解析</a> | <a target="_blank" href="https://view.officeapps.live.com/op/embed.aspx?src=//linji.cn/assets/file/2020/03/1214832629_4765d719.doc" style="">在线打开</a></div></div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">小学教育 2008-06-30 21:02:13 通过 网页 <i class="iconfont icon-view"></i> 浏览(4866) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2008-06-30 21:02:13 通过 网页 <i class="iconfont icon-view"></i> 浏览(4995) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

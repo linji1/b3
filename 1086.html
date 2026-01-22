@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=20242025年学年度第二学期工作日历98天。2025年7月工作nbsp4nbsp天01二02三03四04五05六1，放假到2025年8月31日。2，2025年9月1日星期一开学上课。第nbsp21nbsp周总结2025年6月工作nbsp20nbsp天03二04三05四06五09一10二11三12四13五16一17二18三19四20五23一24二25三26四27五30一第nbsp17nbsp周第nbsp18nbsp周第nbsp19nbsp周第nbsp20nbsp周第nbsp21nbsp周2025年5月工作nbsp19nbsp天06二07三08四09五12一13二14三15四16五19一20二">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=20242025年学年度第二学期工作日历98天。2025年7月工作nbsp4nbsp天01二02三03四04五05六1，放假到2025年8月31日。2，2025年9月1日星期一开学上课。第nbsp21nbsp周总结2025年6月工作nbsp20nbsp天03二04三05四06五09一10二11三12四13五16一17二18三19四20五23一24二25三26四27五30一第nbsp17nbsp周第nbsp18nbsp周第nbsp19nbsp周第nbsp20nbsp周第nbsp21nbsp周2025年5月工作nbsp19nbsp天06二07三08四09五12一13二14三15四16五19一20二','https://dict.youdao.com/dictvoice?le=zh&audio=21三22四23五26一27二28三29四30五第nbsp13nbsp周第nbsp14nbsp周第nbsp15nbsp周第nbsp16nbsp周2025年4月工作nbsp22nbsp天01二02三03四07一08二09三10四11五14一15二16三17四18五21一22二23三24四25五27日28一29二30三第nbsp8nbsp周第nbsp9nbsp周第nbsp10nbsp周第nbsp11nbsp周补5月5日第13周星期一课第nbsp12nbsp周2025年3月工作nbsp21nbsp天03一04二05三06四07五10一11二12三13四14五17一18二19三20四21五24一25二','https://dict.youdao.com/dictvoice?le=zh&audio=26三27四28五31一第nbsp4nbsp周第nbsp5nbsp周第nbsp6nbsp周第nbsp7nbsp周第nbsp8nbsp周2025年2月工作nbsp12nbsp天13四14五17一18二19三20四21五24一25二26三27四28五第nbsp1nbsp周第nbsp2nbsp周第nbsp3nbsp周放假时间1，第 8 周，04月04日 星期五，清明节放假一天。2，第nbsp12nbsp周，05月01日nbsp星期四，05月02日nbsp星期五，第nbsp13nbsp周，05月05日nbsp星期一，劳动节放假二天。3，第 17 周，06月02日 星期一，端午节放假一天。相关通知1，放','https://dict.youdao.com/dictvoice?le=zh&audio=假通知根据上级节假日工作安排，2025年4月4日至4月6日放假，共3天。各学校幼儿园要按照会议相关工作要求做好师生放假前安全教育及值班值守等工作，确保全体师生度过祥和平安的节假日。雷州市教育局 2025年4月2日2，放假通知根据上级节假日工作安排，2025年5月1日至5月5日放假调休，共5天。4月27日星期日调上星期一课程。各学校要按照有关要求做好师生安全教育及值班值守等工作，确保全体师生度过祥和平安的节假日。雷州市教育局 2025年4月25日3，放假通知根据国务院节假日放假通知精神，端午节放假时间为5月31日星期六至6月2日星期一，6月3日星期二正常上课。杨家镇中心小学2025年5月30日',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -664,11 +632,7 @@ document.body.addEventListener('input', POWERMODE);
 <p><strong>1、【放假通知】</strong>根据上级节假日工作安排，2025年4月4日至4月6日放假，共3天。各学校幼儿园要按照会议相关工作要求做好师生放假前安全教育及值班值守等工作，确保全体师生度过祥和平安的节假日。【雷州市教育局 2025年4月2日】</p><p><b>2、【放假通知】</b>根据上级节假日工作安排，2025年5月1日至5月5日放假调休，共5天。4月27日（星期日）调上星期一课程。各学校要按照有关要求做好师生安全教育及值班值守等工作，确保全体师生度过祥和平安的节假日。【雷州市教育局 2025年4月25日】</p>
 
 <p><strong>3、【放假通知】</strong>根据国务院节假日放假通知精神，端午节放假时间为5月31日（星期六）至6月2日（星期一），6月3日（星期二）正常上课。【杨家镇中心小学2025年5月30日】</p></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">小学教育 2025-03-17 08:10:18 通过 网页 <i class="iconfont icon-view"></i> 浏览(18030) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2025-03-17 08:10:18 通过 网页 <i class="iconfont icon-view"></i> 浏览(18203) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=第十四届华杯赛决赛A卷答案。第十四届华杯赛决赛A卷答案一，填空1 1122 4242643 2的10次方102420092的11次方， 102471462所以最后的数字是34 设小正方形的边长是厘米，则0591，265 设这个班的学生共有人，则K3893，有9K41因为K，X都是整数，41是质数，所以9K1，K8，X416 ABC1101128，28是偶数，则A，B，C必有一个数是偶数且是4，剩下两个数的积110117157377，又因为A，B，C两两互质，剩下两个数是1573和7749，所以ABC449157316267 根据题意 336，2250，341,337,解得13，12，8，5nb">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=第十四届华杯赛决赛A卷答案。第十四届华杯赛决赛A卷答案一，填空1 1122 4242643 2的10次方102420092的11次方， 102471462所以最后的数字是34 设小正方形的边长是厘米，则0591，265 设这个班的学生共有人，则K3893，有9K41因为K，X都是整数，41是质数，所以9K1，K8，X416 ABC1101128，28是偶数，则A，B，C必有一个数是偶数且是4，剩下两个数的积110117157377，又因为A，B，C两两互质，剩下两个数是1573和7749，所以ABC449157316267 根据题意 336，2250，341,337,解得13，12，8，5nb','https://dict.youdao.com/dictvoice?le=zh&audio=spnbsp 82125338 根据公式1nn2的积个位是3，十位是0可知1n和n2是奇数，或1n2和n是奇数，且这两个数的个位必为7，9或1，3相乘个位才得3当这两个数的个位为7，9时，3719703最小当这两个数的个位为1，3时，2143903最小。所以n最小值是37二，简答9 1121315172472102,2 2472101732101224143111113,所以这六个分数的和在1和2之间。10 10月第一天星期四，有3，5，8，11个月都有5个星期日11nbspnbspnbspnbsp60,270 54012nbspnbspnbspnbsp1359910111012512601，','https://dict.youdao.com/dictvoice?le=zh&audio=26011949652，要求K的最小值，则652101999795939176751，k518 43个三，详答13 高42351,cdab35,则两个三角形高之比是35，三角形oab的高是58,面积是5582 251614 不同数字代表不同的数字，48华杯赛第十四届，积是四位数，则华一定是1，贺8是偶数，则届也是偶数，所以届可能是2或6当届是6时，赛一定是7，杯可能2，3，5，9481276096不符合题意，481577536不符合题意481376576不符合题意，481979456不符合题意',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -750,11 +718,7 @@ document.body.addEventListener('input', POWERMODE);
 	margin-left: 0;
 }
 </style></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">小学教育 2009-04-26 11:20:58 通过 网页 <i class="iconfont icon-view"></i> 浏览(5054) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2009-04-26 11:20:58 通过 网页 <i class="iconfont icon-view"></i> 浏览(5191) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=广东省中小学教学用书征订管理系统。教学用书征订入口1，进入学校用户信息管理，首先要将旧的学生信息全部删除，然后将学籍平台的学生信息录入模板再批量导入，确保两个平台学生信息一致。2，进入中小学教学用书征订，A是新华书店的，B是广宏书店的。3，征订管理系统主要是做好免费的，在纸质上填写数据时，免费部分要填写学籍平台人数lt，多出的再填写自费的。这样做就确保征订系统与纸质免费数据一致。4，教师用的课本不强制在系统自费里订自费的就不用在系统里填报。5，免费学生人数要做到小于或等于学籍平台人数。6，按以下表格整理，做这个任务就条理清楚，做得比较快，一般在1个小时内可以完成。第一部分 1547  1659">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=广东省中小学教学用书征订管理系统。教学用书征订入口1，进入学校用户信息管理，首先要将旧的学生信息全部删除，然后将学籍平台的学生信息录入模板再批量导入，确保两个平台学生信息一致。2，进入中小学教学用书征订，A是新华书店的，B是广宏书店的。3，征订管理系统主要是做好免费的，在纸质上填写数据时，免费部分要填写学籍平台人数lt，多出的再填写自费的。这样做就确保征订系统与纸质免费数据一致。4，教师用的课本不强制在系统自费里订自费的就不用在系统里填报。5，免费学生人数要做到小于或等于学籍平台人数。6，按以下表格整理，做这个任务就条理清楚，做得比较快，一般在1个小时内可以完成。第一部分 1547  1659','https://dict.youdao.com/dictvoice?le=zh&audio=第二部分 6第三部分 31668信息技术五六数学学具一 二综合课程专题三四五1556综合实践活动五六科学实验材料一 二三四英语三四五六书法练习指导三四五六科学学生活动手册二三四五六科学一 二三四五六音乐一 二三四五六语文一 二三四五六美术一 二三四五六数学一 二三四五六道德与法治一 二三四五六国家中小学智慧教育平台使用指南一 二三四五六',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -919,11 +887,7 @@ document.body.addEventListener('input', POWERMODE);
 <a href="/assets/file/2024/12/2024121204.webp" data-fancybox="gallery"><img src="/assets/file/2024/12/2024121204.webp" style="width: 100%;height: auto;"></a><br>
 
 <a href="/assets/file/2024/12/2024121205.webp" data-fancybox="gallery"><img src="/assets/file/2024/12/2024121205.webp" style="width: 100%;height: auto;"></a></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">小学教育 2024-12-12 10:59:25 通过 网页 <i class="iconfont icon-view"></i> 浏览(1512) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2024-12-12 10:59:25 通过 网页 <i class="iconfont icon-view"></i> 浏览(1702) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
