@@ -581,10 +581,42 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
+    <!-- <head>中添加听读功能样式 -->
+<style>
+  /* 句子高亮样式 */
+.sentence.current {
+  background-color: #fffacd; /* 淡黄色高亮 */
+  border-radius: 3px;
+}
+.sentence {
+  cursor: pointer;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -602,9 +634,9 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>数学科代表的重要性</h1><div class="text">
 做为一名农村教师，任务重，所教的课程多，每一节课都要好好、认真的备课，教案要写很多，作业要改很多，试卷要改很多，学生要辅导很多，要经常听课，继续进修学习。<br><br>这么多的事情，这么多的任务，做教师的压力自然就大了。<br><br>那么怎样去减压呢？怎样去保证教学质量呢？怎样去保证升学率呢？<br><br>我正在探索对于这些问题的解决方法。<br><br>在这个学期里，我准备实验以下一种方法:<br><br>在每一个我所任教的班级里培养几位有责任心、诚实、肯干、认真、细心的科代表，并细分工作到每一位代表身上，让每一位代表都有一点事做。<br><br>从这几位中选出一位有领导才能的同学出来，统领这几位代表，我先与这位同学掌握全班情况，如果有不明白的地方，再与其它代表沟通。<!--more--><br><br>我教的是四、五、六年级的数学。<br><br>要学好数学，就必须做一些有代表性的数学题，从做中体会思路、体会方法，学会运用课本里的知识，将所教的内容融会惯通。<br><br>所以这些代表的作用就是帮助我来督促全班同学做练习、做作业。<br><br>由于代表与其它同学是最接近的，所以能够及时的了解其它同学的情况，及时督促，及时帮助。<br><br>我现在已经是有点招架不住了，希望通过这样的方式来帮助我，希望自己所教的班级到期未时不会是那么差。<br><br></div>
-<p class="time clb">小学教育 2008-10-15 14:27:01 通过 网页 <i class="iconfont icon-view"></i> 浏览(4777) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">小学教育 2008-10-15 14:27:01 通过 网页 <i class="iconfont icon-view"></i> 浏览(4811) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -965,5 +997,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
+<!-- </body>前插入听读核心JS -->
+<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>
