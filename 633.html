@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -800,7 +803,7 @@ document.body.addEventListener('input', POWERMODE);
 </p><p>34．比1/2大又比7小，分母是6的最简分数一共有多少个？
 </p><p>35．1/13的分子和分母同加一个什么数后，就变成了3/5？
 </p><p>36．一艘客轮从甲港开出，到乙港有2/7乘客离船，又有45人上船，这时乘客人数相当于从甲港开出时的20/21，问这时有乘客多少人？</p></div>
-</div><p class="time clb">小学教育 2021-01-07 22:17:07 通过 网页 <i class="iconfont icon-view"></i> 浏览(4122) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">小学教育 2021-01-07 22:17:07 通过 网页 <i class="iconfont icon-view"></i> 浏览(4124) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->

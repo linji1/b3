@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -743,7 +746,7 @@ document.body.addEventListener('input', POWERMODE);
 <p>你挡不住春天，那就让春意满园吧！</p>
 <p><strong>— END —</strong></p>
 <p><strong>作者：</strong>罗骞昀。新东方家庭教育（ID：xdfjtjy），传递专业家庭教育理念，提供海内外家庭教育资讯，分享可吸收、可操作的方法和建议。让持续的学习成为家庭的习惯。</p></div>
-</div><p class="time clb">小学教育 2024-01-18 22:47:29 通过 网页 <i class="iconfont icon-view"></i> 浏览(1917) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">小学教育 2024-01-18 22:47:29 通过 网页 <i class="iconfont icon-view"></i> 浏览(1921) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
