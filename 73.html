@@ -581,45 +581,10 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
-    <!-- <head>中添加听读功能样式 -->
-<style>
-.sentence {
-  cursor: pointer;
-  /* 默认 inline，不破坏排版 */
-}
-.sentence:hover {
-  background-color: #f0f0f0;
-}
-.sentence.current {
-  background-color: #ffeb3b; /* 黄色高亮 */
-  border-radius: 2px;
-}
-</style>
-<!-- 听读控制面板（插入到printview容器前） -->
-<div class="reader-panel" style="margin: 20px 0;display: none;">
-  <div class="controls">
-    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
-    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
-    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
-    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
-  </div>
-  <div class="voice-control">
-    <label for="voiceSelect">选择语音</label>
-    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
-  </div>
-  <div class="progress-container">
-    <div class="progress-info">
-      进度: <span id="progressText">0/0</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-  </div>
-</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -637,9 +602,9 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>如何消除学习数学的各种障碍，提高数学成绩？</h1><div class="text">
 &nbsp;&nbsp;&nbsp;&nbsp;学生的智力水平不一，数学基础参差不齐，造成数学学习上的两极分化。如何消除学习数学的各种障碍，提高数学成绩，笔者说说个人的浅见。<br><br>　　数学课学习要坚持做到“五到”即耳到、眼到、口到、心到、手到。<br><br>　　耳到：在听课的过程中，听老师讲的知识重点和难点，又要听同学回答问题的内容。<br><br>　　眼到：把书上知识与老师课堂讲的知识联系起来。<br><br>　　口到：是自己预习时没有掌握的，课堂上新生的疑问，提出来。<br><br>　　心到：课堂上要认真思考，注意理解课堂的知识，主动积极。<br><br>　　手到：就是在听，看，思的同时，要适当地动手做一些笔记。<br><br>　　掌握练习方法，提高解答数学题的能力。<!--more--><br><br>　　1.端正态度，充分认识到数学练习的重要性。实际练习不仅可以提高解答速度，掌握解答技能技巧，而且，许多的新问题常在练习中出现。<br><br>　　2.要有自信心与意志力。数学练习常有繁杂的计算，深奥的证明，自己应有充足的信心，顽强的意志，耐心细致的习惯。<br><br>　　3.要养成先思考，后解答，再检查的良好习惯，认真思考，抓住关键，再作解答。<br><br>　　4.细观察、活运用、寻规律、成技巧。<br><br>　　掌握复习方法，提高数学综合能力。<br><br>　　复习巩固应注意掌握以下方法。<br><br>　　1.合理安排复习时间，“趁热打铁”，当天学习的功课当天必须复习，要巩固复习，一定要克服不看书复习就做作业，把书当成工具书查阅的不良习惯。<br><br>　　2.广泛采用综合复习方法，即通过找出知识的左右关系和纵横之间的内在联系。<br><br>　　综合复习具体可分“三步走”：首先是统观全局，浏览全部内容，通过唤起回忆，初步形成完整的知识体系印象，其次是加深理解，对所学内容进行综合分析，最后是整理巩固。<br><br>　　3.重视实际应用的复习方法。通过“完成实际作业”来实现对数学的复习，教育家明确指出，在数学课程中“应当注意把知识的实际应用作为重要的复习方法”，例如复习一元二次方程可做以下四道题。<br><br>　　（1）方程3x2-5x+a=0的一根大于-2而小于0，另一根大于1而小于3。求实数a的取值范围。<br><br>　　（2）方程2mx2-4mx+3（m-1）=0有两个实数根，确定实数m的范围。<br><br>　　（3）方程x2+（m-2）x+5-m=0的两根都大于2，确定实数m的范围。<br><br>　　（4）已知三角形两边长a、b是方程2x2-mx+2=0的两根，且c边长为8，求实数m的范围。<br><br>　　4.广览博集，突破薄弱环节的复习方法。</div>
-</div><p class="time clb">小学教育 2009-03-05 23:06:20 通过 网页 <i class="iconfont icon-view"></i> 浏览(4059) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2009-03-05 23:06:20 通过 网页 <i class="iconfont icon-view"></i> 浏览(4060) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -1000,7 +965,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
-<!-- </body>前插入听读核心JS -->
-<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>

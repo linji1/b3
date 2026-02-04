@@ -581,45 +581,10 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
-    <!-- <head>中添加听读功能样式 -->
-<style>
-.sentence {
-  cursor: pointer;
-  /* 默认 inline，不破坏排版 */
-}
-.sentence:hover {
-  background-color: #f0f0f0;
-}
-.sentence.current {
-  background-color: #ffeb3b; /* 黄色高亮 */
-  border-radius: 2px;
-}
-</style>
-<!-- 听读控制面板（插入到printview容器前） -->
-<div class="reader-panel" style="margin: 20px 0;display: none;">
-  <div class="controls">
-    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
-    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
-    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
-    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
-  </div>
-  <div class="voice-control">
-    <label for="voiceSelect">选择语音</label>
-    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
-  </div>
-  <div class="progress-container">
-    <div class="progress-info">
-      进度: <span id="progressText">0/0</span>
-    </div>
-    <div class="progress-bar">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-  </div>
-</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b3/list-3.html" style="color: #7d8c8e;">小学教育</a><span>/</span>正文</div>
-<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -646,9 +611,9 @@ document.body.addEventListener('input', POWERMODE);
 <p>这件事发生在上个暑假。有一天，她想上山拾柴，就去约了几位平时玩得好的姐妹。但是，她的姐妹都推说没有空，不去了。她一气之下就独自去，一边骑着自行车，一边生气着说：“哼！你们都不去，我自己去”。到了山上，把自行车停好，就进入树林里拾柴。一边拾柴，一边听着鸟语，很是开心，刚才的不悦之情一扫而空。她开心地唱着小曲，突然，她听到右边有沙沙的脚步声，从远处传来，声音越来越响，她心理窃喜，心想：“你们还说不来，这不是又来了吗？”但，当她转过身时，惊讶了，这那是平时玩得好的姐妹，这可是一位从不认识的大人呢？看他向自己这边冲过来，那可怎么办呢？她脑子一转，有了，她丢下一切向左边的田野跑去，一边跑，一边大叫，“爸爸，我来了。”她飞快地跑向田野，向正在劳动的一位老农跑去。刚开始，后面的脚步声也急促赶上来，不久却突然停下了，她转过身去，看到那个大人停下了，嘴里不知在嘟喃些什么，好像很不甘的向另一边跑去。小珍躬着腰，拍着胸脯，喘着气，一下子坐到地上。老农望了小珍一眼，笑了一笑，继续劳动。</p>
 <p>从这件事里，我终于明白，我们要听老师、校长的话，学会自我保护，不要让我们在外打工的爹妈担心。老师、校长，我一定听你们的话。</p>
 <p>林小珍，谢谢你！你真是一位很棒的小精灵。</p></div>
-</div><p class="time clb">小学教育 2010-12-21 22:55:20 通过 网页 <i class="iconfont icon-view"></i> 浏览(4545) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">小学教育 2010-12-21 22:55:20 通过 网页 <i class="iconfont icon-view"></i> 浏览(4547) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -1009,7 +974,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
-<!-- </body>前插入听读核心JS -->
-<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>
